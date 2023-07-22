@@ -43,7 +43,7 @@ type DataArrayTypes = {
 
 const Card = ({ dataArray }: DataArrayTypes) => {
   return (
-    <div className="w-full xl:w-[80%] block xl:flex md:flex flex-wrap my-12 gap-4 m-auto text-center mb-[5rem]">
+    <div className="w-full xl:w-[80%] block xl:flex md:flex flex-wrap my-12 gap-4 m-auto text-center mb-[5rem] p-[30px]">
       {dataArray?.length > 0
         ? dataArray?.map((item: Props, index: any) => {
             return (
@@ -51,7 +51,7 @@ const Card = ({ dataArray }: DataArrayTypes) => {
                 key={index}
                 className="mt-9 w-full xl:w-[25rem] m-auto flex flex-col items-center"
               >
-                <div className="bg-[#ececec] rounded-[50%] p-3 w-[60px] h-[60px] flex items-center justify-center">
+                <div className="bg-[#ececec] rounded-[50%] p-3  flex items-center justify-center">
                   <img src={item?.icon} alt="icon" width={50} height={50} />
                 </div>
                 <div className="bg-[#ececec] py-[48px] px-[16px] rounded-lg hover:border hover:border-[#18a6e2]">
