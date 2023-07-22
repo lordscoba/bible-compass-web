@@ -4,8 +4,19 @@
 
 .hero {
   height: 100%;
+  width: 100%;
   background: url('http://www.evethemes.com/demo/lp/startup/demo/images/static-header.jpg');
-  background-size: auto;
+
   /* background-attachment: fixed; */
   object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.get-offer {
+  background: url('http://www.evethemes.com/demo/lp/startup/demo/images/1920x700x1.jpg');
+  object-fit: cover;
+  height: 620px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

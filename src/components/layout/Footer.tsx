@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className={` bg-[#222] py-[6rem]`}>
       <div className={`w-full max-w-[70%] m-auto`}>
-        <div className={`block  xl:flex justify-between`}>
+        <div className={`block  xl:flex  justify-between`}>
           <AboutUs />
           <HelpfulLink />
           <LatestPost />
@@ -50,7 +50,10 @@ const AboutUs = () => {
         {aboutUsDetails?.length > 0
           ? aboutUsDetails?.map((item: AboutUsInterface, index: any) => {
               return (
-                <div key={index} className={`text-[#B7B5B7] text-[1rem]`}>
+                <div
+                  key={index}
+                  className={`text-[#B7B5B7] text-[1rem] text-center xl:text-start`}
+                >
                   <p className={`mb-[1rem]`}>{item?.textOne}</p>
                   <p>{item?.textTwo}</p>
                 </div>
@@ -64,7 +67,7 @@ const AboutUs = () => {
 
 const HelpfulLink = () => {
   return (
-    <div className={`text-center mb-4 mx-auto`}>
+    <div className={`text-center mb-[2rem] mt-[3rem] xl:mt-0  mx-auto`}>
       <h2 className={`text-[#fff] mb-[1rem] text-[1.2rem]`}>Helpful Links</h2>
       <div className={`  `}>
         {helpfulLinksDetails?.length > 0
@@ -72,13 +75,20 @@ const HelpfulLink = () => {
               (item: HelpfulLinkInterface, index: any) => {
                 return (
                   <div
-                    className={` w-[50%] xl:w-full m-auto flex items-center gap-4 text-[#B7B5B7]`}
+                    key={index}
+                    className={` w-[50%] xl:w-full m-auto text-[#B7B5B7]`}
                   >
-                    <p
-                      className={`w-[6px] h-[6px] bg-[#fff] rounded-[50%]`}
+                    {/* <p
+                      className={`w-[6px] h-[6px] bg-[#fff] rounded-[50%] xl:mb-3 mt-3`}
                     ></p>
                     <p className={`text-[1rem] mb-3 cursor-pointer`}>
                       {item?.text}
+                    </p> */}
+                    <p className="flex items-start xl:justify-start justify-center gap-3 mb-3 ">
+                      <span className="block mt-2 h-2 w-2 rounded-full bg-white"></span>
+                      <span className="text-[1rem] mb-3 cursor-pointer">
+                        {item?.text}
+                      </span>
                     </p>
                   </div>
                 );
@@ -99,13 +109,13 @@ const LatestPost = () => {
         Latest Post
       </h2>
 
-      <section className={`mx-auto`}>
+      <section className={`  mt-[2rem] xl:mt-0`}>
         {latestPostDetails?.length > 0
           ? latestPostDetails?.map((item: LatestPostInterface, index: any) => {
               return (
                 <div
                   key={index}
-                  className={`flex items-center gap-2 mb-3 text-[1rem]`}
+                  className={`flex items-center xl:justify-start justify-center gap-2 xl:mb-3 mb-4 text-[1rem]`}
                 >
                   <div>
                     <img
@@ -139,13 +149,13 @@ const ContactUs = () => {
         Contact us
       </h2>
 
-      <section>
+      <section className="mt-[2rem] xl:mt-0 mb-[2rem] xl:mb-0">
         {contactUsDetails?.length > 0
           ? contactUsDetails?.map((item: ContactUsInterface, index: any) => {
               return (
                 <div key={index}>
                   <div
-                    className={`flex items-center gap-2 text-[#B7B5B7] text-[1rem] mb-[1rem] ${
+                    className={`flex items-center xl:justify-start justify-center gap-2 text-[#B7B5B7] text-[1rem] mb-[1rem] ${
                       item?.name === 'Location'
                         ? 'cursor-auto'
                         : 'cursor-pointer'
@@ -158,7 +168,9 @@ const ContactUs = () => {
               );
             })
           : null}
-        <div className={`max-w-[80%]`}>
+        <div
+          className={`xl:max-w-[80%] w-[50%] mx-auto xl:mx-0 mt-[2rem] xl:mt-0 `}
+        >
           <FlexBetween>
             <div className={`border border-[#fff] py-2 px-2 rounded-[.2rem]`}>
               <SlSocialFacebook
