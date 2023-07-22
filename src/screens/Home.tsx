@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
-import Card from "../components/card/Card";
-import GetInTouch from "../components/homeComponents/GetInTouch";
-import GetOffer from "../components/homeComponents/GetOffer";
-import OurEnviroment from "../components/homeComponents/OurEnviroment";
-import OurPriceTable from "../components/homeComponents/OurPriceTable";
+import { useEffect, useState } from 'react';
+// import Card from "../components/card/Card";
+import GetInTouch from '../components/homeComponents/GetInTouch';
+import GetOffer from '../components/homeComponents/GetOffer';
+import OurEnviroment from '../components/homeComponents/OurEnviroment';
+import OurPriceTable from '../components/homeComponents/OurPriceTable';
+import Card from '../components/card/Card';
+// import Card from '../components/card/Card';
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="overflow-x-hidden">
       <Hero />
       <OurServices />
       <WhatWeDo />
@@ -56,34 +58,34 @@ const Hero = () => {
 
 const cardData = [
   {
-    header: "Find Keywords",
-    body: "You can search for bible keywords for a category our App",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png",
+    header: 'Find Keywords',
+    body: 'You can search for bible keywords for a category our App',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png',
   },
   {
-    header: "Bible",
-    body: "We have an Bible incorporated into the app",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png",
+    header: 'Bible',
+    body: 'We have an Bible incorporated into the app',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png',
   },
   {
-    header: "Related Verses",
-    body: "Each keywords are matched with their related verses for navigation",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png",
+    header: 'Related Verses',
+    body: 'Each keywords are matched with their related verses for navigation',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png',
   },
   {
-    header: "User Management",
-    body: "Effective user management. We have an effective user management system",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png",
+    header: 'User Management',
+    body: 'Effective user management. We have an effective user management system',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png',
   },
   {
-    header: "Effective Payment System",
-    body: "Paystack payment system integrated into the website for effective payments",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
+    header: 'Effective Payment System',
+    body: 'Paystack payment system integrated into the website for effective payments',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png',
   },
   {
-    header: "Favorites",
-    body: "You can bookmark favorite keywords for easier use",
-    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png",
+    header: 'Favorites',
+    body: 'You can bookmark favorite keywords for easier use',
+    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png',
   },
 ];
 
@@ -101,6 +103,7 @@ const OurServices = () => {
     <div className={`my-[2rem]`}>
       <h2 className="text-center font-medium text-[2.5rem]">OUR SERVICES</h2>
       <div className="w-[9rem] h-1 bg-[#35B3EB] m-auto rounded-sm"></div>
+      {/* <Card dataArray={data} /> */}
       <Card dataArray={data} />
     </div>
   );
