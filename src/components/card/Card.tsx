@@ -43,7 +43,7 @@ type DataArrayTypes = {
 
 const Card = ({ dataArray }: DataArrayTypes) => {
   return (
-    <div className="w-full xl:w-[80%] block xl:flex md:flex flex-wrap my-12 gap-4 m-auto text-center mb-[5rem] p-[30px]">
+    <div className="w-full xl:w-[80%] block xl:flex md:flex flex-wrap my-12 gap-4 m-auto text-center mb-[5rem] px-[30px] xl:px-0">
       {dataArray?.length > 0
         ? dataArray?.map((item: Props, index: any) => {
             return (
@@ -51,10 +51,14 @@ const Card = ({ dataArray }: DataArrayTypes) => {
                 key={index}
                 className="mt-9 w-full xl:w-[25rem] m-auto flex flex-col items-center"
               >
-                <div className="bg-[#ececec] rounded-[50%] p-3  flex items-center justify-center">
-                  <img src={item?.icon} alt="icon" width={50} height={50} />
+                <div className="bg-[#ececec] rounded-[50%] p-3 xl:w-[60px] w-[50px] xl:h-[60px] h-[50px] flex items-center justify-center">
+                  <img
+                    src={item?.icon}
+                    alt="icon"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="bg-[#ececec] py-[48px] px-[16px] rounded-lg hover:border hover:border-[#18a6e2]">
+                <div className="bg-[#ececec] w-full h-[12rem] py-[48px] px-[16px] rounded-lg hover:border hover:border-[#18a6e2]">
                   <h4 className="text-[#222] text-[1.2rem] font-semibold mb-3">
                     {item?.header}
                   </h4>

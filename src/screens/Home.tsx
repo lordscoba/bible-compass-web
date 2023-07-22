@@ -6,7 +6,7 @@ import {
   OurPriceTable,
   OurServices,
   WhatWeDo,
-} from "../components/home";
+} from '../components/home';
 
 const Home = () => {
   return (
