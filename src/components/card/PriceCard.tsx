@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface PriceInterface {
   planType: string;
   price: string;
@@ -22,7 +20,7 @@ const PriceCard = ({ dataArray }: PriceArrayType) => {
                 <div
                   key={index}
                   className={`bg-[#fff] shadow-2xl w-[418px] hover:border hover:rounded-lg  text-center py-[20px] px-[5px] mb-[2rem] xl:mb-0 ${
-                    index === 1 ? 'border border-[#35B3EB]' : ''
+                    index === 1 ? "border border-[#35B3EB]" : ""
                   }`}
                 >
                   <h2 className="text-[1.1rem] font-medium my-[1rem]">
@@ -35,36 +33,36 @@ const PriceCard = ({ dataArray }: PriceArrayType) => {
                   </p>
                   <p
                     className={`border-b border-dotted py-4 ${
-                      index === 1 ? 'border-[#35B3EB]' : ''
+                      index === 1 ? "border-[#35B3EB]" : ""
                     }`}
                   >
-                    {Number(item?.user)}{' '}
-                    {Number(item?.user) > 1 ? 'Users' : 'user'}
+                    {Number(item?.user)}{" "}
+                    {Number(item?.user) > 1 ? "Users" : "user"}
                   </p>
                   <p
                     className={`border-b border-dotted py-4 ${
-                      index === 1 ? 'border-[#35B3EB]' : ''
+                      index === 1 ? "border-[#35B3EB]" : ""
                     }`}
                   >
                     {item?.planType} Disk Space
                   </p>
                   <p
                     className={`border-b border-dotted py-4 ${
-                      index === 1 ? 'border-[#35B3EB]' : ''
+                      index === 1 ? "border-[#35B3EB]" : ""
                     }`}
                   >
                     {item?.bandwith} Bandwidth
                   </p>
                   <p
                     className={`border-b border-dotted py-4 ${
-                      index === 1 ? 'border-[#35B3EB]' : ''
+                      index === 1 ? "border-[#35B3EB]" : ""
                     }`}
                   >
                     24/7 Tech Support
                   </p>
                   <p
                     className={`border-b border-dotted py-4 ${
-                      index === 1 ? 'border-[#35B3EB]' : ''
+                      index === 1 ? "border-[#35B3EB]" : ""
                     }`}
                   >
                     Email Support
