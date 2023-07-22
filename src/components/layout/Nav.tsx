@@ -1,9 +1,8 @@
-import FlexBetween from '../ReusableComponents/FlexBetween';
-import { Logo } from '../../images/logo';
-import { navData } from '../datas/data';
-import { NavInterface } from '../Types/types';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { useState } from 'react';
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { Logo } from "../../images/logo";
+import { NavInterface } from "../Types/types";
+import { navData } from "../datas/data";
 const Nav = () => {
   const [showNav, setShowNav] = useState<Boolean>(false);
   return (
@@ -21,7 +20,7 @@ const Nav = () => {
         </div>
 
         <div
-          className={`${showNav ? 'block pl-3' : 'hidden'}  mt-2 xl:flex gap-6`}
+          className={`${showNav ? "block pl-3" : "hidden"}  mt-2 xl:flex gap-6`}
         >
           {navData?.length > 0
             ? navData?.map((item: NavInterface, index: any) => {

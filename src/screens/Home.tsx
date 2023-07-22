@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import Card from '../components/card/Card';
-import OurEnviroment from '../components/homeComponents/OurEnviroment';
-import GetOffer from '../components/homeComponents/GetOffer';
-import OurPriceTable from '../components/homeComponents/OurPriceTable';
-import GetInTouch from '../components/homeComponents/GetInTouch';
+import { useEffect, useState } from "react";
+import Card from "../components/card/Card";
+import GetInTouch from "../components/homeComponents/GetInTouch";
+import GetOffer from "../components/homeComponents/GetOffer";
+import OurEnviroment from "../components/homeComponents/OurEnviroment";
+import OurPriceTable from "../components/homeComponents/OurPriceTable";
 
 const Home = () => {
   return (
@@ -55,34 +55,34 @@ const Hero = () => {
 
 const cardData = [
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png',
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png",
   },
 ];
 

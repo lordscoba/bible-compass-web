@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import OurEnviromentCard, { DataArrayTypes } from '../card/OurEnviromentCard';
-import { HiOutlineArrowLongRight } from 'react-icons/hi2';
+import { useEffect, useState } from "react";
+import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import OurEnviromentCard, { DataArrayTypes } from "../card/OurEnviromentCard";
 
 const envData = [
   {
-    image: 'http://www.evethemes.com/demo/lp/startup/demo/images/400x330x1.jpg',
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
+    image: "http://www.evethemes.com/demo/lp/startup/demo/images/400x330x1.jpg",
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
   },
   {
-    image: 'http://www.evethemes.com/demo/lp/startup/demo/images/400x330x2.jpg',
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
+    image: "http://www.evethemes.com/demo/lp/startup/demo/images/400x330x2.jpg",
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
   },
   {
-    image: 'http://www.evethemes.com/demo/lp/startup/demo/images/400x330x3.jpg',
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
+    image: "http://www.evethemes.com/demo/lp/startup/demo/images/400x330x3.jpg",
+    header: "LOREM IPSUM DOLOR",
+    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
   },
 ];
 

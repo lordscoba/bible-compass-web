@@ -1,19 +1,20 @@
-import FlexBetween from '../ReusableComponents/FlexBetween';
+import { FaGooglePlusG } from "react-icons/fa";
+import { ImInstagram } from "react-icons/im";
+import { SlSocialFacebook } from "react-icons/sl";
+import { TfiTwitter } from "react-icons/tfi";
+import FlexBetween from "../ReusableComponents/FlexBetween";
 import {
   AboutUsInterface,
   ContactUsInterface,
   HelpfulLinkInterface,
   LatestPostInterface,
-} from '../Types/types';
-import { aboutUsDetails } from '../datas/data';
-import { contactUsDetails } from '../datas/data';
-import { latestPostDetails } from '../datas/data';
-import { helpfulLinksDetails } from '../datas/data';
-import { SlSocialFacebook } from 'react-icons/sl';
-import { TfiTwitter } from 'react-icons/tfi';
-import { FaGooglePlusG } from 'react-icons/fa';
-import { ImInstagram } from 'react-icons/im';
-import { Link } from 'react-router-dom';
+} from "../Types/types";
+import {
+  aboutUsDetails,
+  contactUsDetails,
+  helpfulLinksDetails,
+  latestPostDetails,
+} from "../datas/data";
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -156,9 +157,9 @@ const ContactUs = () => {
                 <div key={index}>
                   <div
                     className={`flex items-center xl:justify-start justify-center gap-2 text-[#B7B5B7] text-[1rem] mb-[1rem] ${
-                      item?.name === 'Location'
-                        ? 'cursor-auto'
-                        : 'cursor-pointer'
+                      item?.name === "Location"
+                        ? "cursor-auto"
+                        : "cursor-pointer"
                     }`}
                   >
                     <span className={`text-[1.7rem] `}>{item?.icon}</span>

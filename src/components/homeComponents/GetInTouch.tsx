@@ -1,6 +1,5 @@
-import React from 'react';
-import { FaUser, FaRegEnvelope } from 'react-icons/fa';
-import { MdCall } from 'react-icons/md';
+import { FaRegEnvelope, FaUser } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
 
 type Props = {};
 
