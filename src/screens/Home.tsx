@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="overflow-x-hidden">
       <Hero />
       <OurServices />
       <WhatWeDo />

@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import PriceCard, { PriceArrayType } from "../card/PriceCard";
+import { useEffect, useState } from 'react';
+import { HiOutlineArrowLongRight } from 'react-icons/hi2';
+import PriceCard, { PriceArrayType } from '../card/PriceCard';
 
 export const priceData = [
   {
-    planType: "Basic",
-    price: "25",
+    planType: 'Basic',
+    price: '25',
     user: 1,
-    diskSpace: "5",
-    bandwith: "500",
+    diskSpace: '5',
+    bandwith: '500',
   },
   {
-    planType: "STANDARD",
-    price: "28",
+    planType: 'STANDARD',
+    price: '28',
     user: 5,
-    diskSpace: "10GB",
-    bandwith: "1TB",
+    diskSpace: '10GB',
+    bandwith: '1TB',
   },
   {
-    planType: "PREMIUM",
-    price: "32",
+    planType: 'PREMIUM',
+    price: '32',
     user: 10,
-    diskSpace: "15GB",
-    bandwith: "10TB",
+    diskSpace: '15GB',
+    bandwith: '10TB',
   },
 ];
 
