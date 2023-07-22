@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import PriceCard, { PriceArrayType } from "../card/PriceCard";
 
-const priceData = [
+export const priceData = [
   {
     planType: "Basic",
     price: "25",
@@ -48,8 +48,6 @@ const OurPriceTable = (props: Props) => {
   );
 };
 
-export default OurPriceTable;
-
 const SecondSection = () => {
   return (
     <div className="mt-[5rem] mb-[6rem]  pt-[40px] pb-[30px] px-[20px] xl:px-0 ">
@@ -92,3 +90,5 @@ const SecondSection = () => {
     </div>
   );
 };
+
+export default OurPriceTable;
