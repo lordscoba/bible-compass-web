@@ -30,17 +30,18 @@ const Hero = () => {
         >
           <div className={`w-full xl:w-[40rem]`}>
             <h5 className="font-bold text-[1.3rem] text-[#35B3EB] mb-1">
-              Business Startup
+              Bible Compass
             </h5>
             <p className="text-[2.5rem] font-medium mb-2 px-[20px] xl:px-0 text-[#002629]">
-              PREMIUM HTML TEMPLATE
+              Word of God Explorer: Search & Discover
             </p>
 
             <p className="mb-[3rem]">
-              Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel magna
-              lacinia ultrices. commodo tristique. Duis lacus urna, condimentum
-              a vehicula a, hendrerit ac nisi lorem ipsum dolor sit amet
-              vulputate
+              The Word of God Explorer app invites you on a voyage of
+              revelation. Delve into the Bible's vast repository of knowledge
+              and locate specific keywords that hold personal significance.
+              Empower your spiritual growth, share insights with others, and
+              experience the transformative power of the scriptures.
             </p>
 
             <button className="bg-[#35B3EB] text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-md">
@@ -55,33 +56,33 @@ const Hero = () => {
 
 const cardData = [
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "Find Keywords",
+    body: "You can search for bible keywords for a category our App",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png",
   },
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "Bible",
+    body: "We have an Bible incorporated into the app",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png",
   },
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "Related Verses",
+    body: "Each keywords are matched with their related verses for navigation",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png",
   },
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "User Management",
+    body: "Effective user management. We have an effective user management system",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png",
   },
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "Effective Payment System",
+    body: "Paystack payment system integrated into the website for effective payments",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
   },
   {
-    header: "LOREM IPSUM DOLOR",
-    body: "Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt",
+    header: "Favorites",
+    body: "You can bookmark favorite keywords for easier use",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png",
   },
 ];
@@ -123,14 +124,19 @@ const WhatWeDo = () => {
             WHAT WE DO
           </h4>
           <p className="mb-[1rem]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            vehicula dui sit amet ligula cursus, eget molestie diam accumsan.
-            Pellentesque vel suscipit dolor. Integer et dapibus nibh.
+            Are you ready to dive into the depths of the Bible's wisdom? With
+            our Bible Searcher app, finding keywords in the holy scriptures has
+            never been easier. Uncover hidden truths, gain deeper insights, and
+            embark on a spiritual journey with this powerful keyword-finding
+            tool.
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            vehicula dui sit amet ligula cursus, eget molestie diam accumsan.
+            Strengthen your faith with Bible Keyword Connect, a cutting-edge app
+            designed to help you explore the Bible in a profound way. Unite with
+            the teachings of the Holy Scriptures through seamless keyword
+            searches. As you encounter life-changing verses, let the app be your
+            guide to cultivating a deeper relationship with God.
           </p>
           <div className="flex items-center gap-[1rem] pb-[2rem] pt-[2rem]">
             <img
