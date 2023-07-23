@@ -6,11 +6,13 @@ import {
   OurPriceTable,
   OurServices,
   WhatWeDo,
-} from '../components/home';
+} from "../components/home";
+import { Footer, Nav } from "../components/layout";
 
 const Home = () => {
   return (
     <div className="overflow-x-hidden">
+      <Nav />
       <Hero />
       <OurServices />
       <WhatWeDo />
@@ -18,6 +20,7 @@ const Home = () => {
       <OurPriceTable />
       <GetOffer />
       <GetInTouch />
+      <Footer />
     </div>
   );
 };

@@ -1,22 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
-import App from './App';
-import './App.css';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import { Footer, Nav } from './components/layout';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import App from "./App";
+import "./App.css";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Nav />
     <RouterProvider router={App} />
-    <Footer />
   </React.StrictMode>
 );
 
