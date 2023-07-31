@@ -1,33 +1,28 @@
 export const cardData = [
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png',
+    header: "Categories",
+    body: "You can find headings which  includes Career, Family/Marriage, Finance, Relationship and Spirituality",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x1.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png',
+    header: "Find Keywords",
+    body: "You can search for keywords that pertains to any relevant  topic of your choice.",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x2.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png',
+    header: "Bible Verses",
+    body: "Read verses that explain the topics of your choice",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x3.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png',
+    header: "Favorite",
+    body: "Abeg there's something you wrote here before just put it back.",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png",
   },
   {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png',
-  },
-  {
-    header: 'LOREM IPSUM DOLOR',
-    body: 'Lorem ipsum dolor sit amet, eirmod tempor invidunt ut labore et dolore diam nonumy eirmod invidunt',
-    icon: 'http://www.evethemes.com/demo/lp/startup/demo/images/64x64x6.png',
+    header: "Bible",
+    body: "A bible incorporated into the app for user's edification.",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
   },
 ];
 
