@@ -2,8 +2,6 @@ import {
   GetInTouch,
   GetOffer,
   Hero,
-  OurEnviroment,
-  OurPriceTable,
   OurServices,
   WhatWeDo,
 } from "../components/home";
@@ -16,8 +14,8 @@ const Home = () => {
       <Hero />
       <OurServices />
       <WhatWeDo />
-      <OurEnviroment />
-      <OurPriceTable />
+      {/* <OurEnviroment /> */}
+      {/* <OurPriceTable /> */}
       <GetOffer />
       <GetInTouch />
       <Footer />

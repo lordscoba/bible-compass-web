@@ -1,4 +1,5 @@
 export interface NavInterface {
+  // link: String;
   text: String;
   id: any;
 }

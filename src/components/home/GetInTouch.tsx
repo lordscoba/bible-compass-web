@@ -5,14 +5,13 @@ type Props = {};
 
 const GetInTouch = (props: Props) => {
   return (
-    <div className="bg-[#ececec] py-[30px] px-[8px]">
+    <div className="bg-[#ececec] py-[30px] px-[8px]" id="contact">
       <h2 className=" text-center my-[1.7rem] text-[2rem] font-semibold">
         GET IN TOUCH WITH STARTUP TEAM
       </h2>
       <p className="text-center leading-7 text-[#837f7f] text-[1.1rem] mb-[1.6rem] w-full xl:w-[60%] md:w-[60%] m-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra
-        efficitur diam, vel sagittis ipsum. Curabitur eleifend, risus id
-        sollicitudin pretium, massa ex tristique velit
+        You are free to contact us to make any enquiries on the app. You can
+        send us email or call us to get a quicker response.
       </p>
       <form className="w-full xl:w-[60%] md:w-[60%] m-auto px-[14px] ">
         <div className="block xl:flex flex-1 gap-4 mb-[3rem]">
