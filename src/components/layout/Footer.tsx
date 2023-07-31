@@ -7,13 +7,11 @@ import {
   AboutUsInterface,
   ContactUsInterface,
   HelpfulLinkInterface,
-  LatestPostInterface,
 } from "../Types/types";
 import {
   aboutUsDetails,
   contactUsDetails,
   helpfulLinksDetails,
-  latestPostDetails,
 } from "../datas/data";
 
 const Footer = () => {
@@ -21,10 +19,10 @@ const Footer = () => {
   return (
     <div className={` bg-[#222] py-[6rem]`}>
       <div className={`w-full max-w-[70%] m-auto`}>
-        <div className={`block  xl:flex  justify-between`}>
+        {/* <div className={`block  xl:flex  justify-between`}> */}
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2`}>
           <AboutUs />
           <HelpfulLink />
-          <LatestPost />
           <ContactUs />
         </div>
         <hr className={`my-[2rem] block h-[.2px] bg-[grey] border-none`} />
@@ -40,7 +38,7 @@ export default Footer;
 
 const AboutUs = () => {
   return (
-    <div className={`w-full xl:max-w-[25%] mb-4 xl:mb-0`}>
+    <div className={`w-full mb-4 xl:mb-0`}>
       <h2
         className={`text-[#fff] mb-[1rem] text-[1.2rem] text-center xl:text-start`}
       >
@@ -68,24 +66,15 @@ const AboutUs = () => {
 
 const HelpfulLink = () => {
   return (
-    <div className={`text-center mb-[2rem] mt-[3rem] xl:mt-0  mx-auto`}>
+    <div className={`text-center xl:mt-0  mx-auto`}>
       <h2 className={`text-[#fff] mb-[1rem] text-[1.2rem]`}>Helpful Links</h2>
       <div className={`  `}>
         {helpfulLinksDetails?.length > 0
           ? helpfulLinksDetails?.map(
               (item: HelpfulLinkInterface, index: any) => {
                 return (
-                  <div
-                    key={index}
-                    className={` w-[50%] xl:w-full m-auto text-[#B7B5B7]`}
-                  >
-                    {/* <p
-                      className={`w-[6px] h-[6px] bg-[#fff] rounded-[50%] xl:mb-3 mt-3`}
-                    ></p>
-                    <p className={`text-[1rem] mb-3 cursor-pointer`}>
-                      {item?.text}
-                    </p> */}
-                    <p className="flex items-start xl:justify-start justify-center gap-3 mb-3 ">
+                  <div key={index} className={` text-[#B7B5B7]`}>
+                    <p className="flex items-start xl:justify-start gap-3 mb-3 ">
                       <span className="block mt-2 h-2 w-2 rounded-full bg-white"></span>
                       <span className="text-[1rem] mb-3 cursor-pointer">
                         {item?.text}
@@ -101,45 +90,45 @@ const HelpfulLink = () => {
   );
 };
 
-const LatestPost = () => {
-  return (
-    <div className={`w-full xl:max-w-[30%] mb-6 xl:mb-0`}>
-      <h2
-        className={`text-[#fff]  text-[1.2rem] mb-[1rem] xl:text-start text-center `}
-      >
-        Latest Post
-      </h2>
+// const LatestPost = () => {
+//   return (
+//     <div className={`w-full xl:max-w-[30%] mb-6 xl:mb-0`}>
+//       <h2
+//         className={`text-[#fff]  text-[1.2rem] mb-[1rem] xl:text-start text-center `}
+//       >
+//         Latest Post
+//       </h2>
 
-      <section className={`  mt-[2rem] xl:mt-0`}>
-        {latestPostDetails?.length > 0
-          ? latestPostDetails?.map((item: LatestPostInterface, index: any) => {
-              return (
-                <div
-                  key={index}
-                  className={`flex items-center xl:justify-start justify-center gap-2 xl:mb-3 mb-4 text-[1rem]`}
-                >
-                  <div>
-                    <img
-                      src={item?.image}
-                      alt="picture"
-                      width={120}
-                      height={120}
-                      className="object-cover"
-                    />
-                  </div>
+//       <section className={`  mt-[2rem] xl:mt-0`}>
+//         {latestPostDetails?.length > 0
+//           ? latestPostDetails?.map((item: LatestPostInterface, index: any) => {
+//               return (
+//                 <div
+//                   key={index}
+//                   className={`flex items-center xl:justify-start justify-center gap-2 xl:mb-3 mb-4 text-[1rem]`}
+//                 >
+//                   <div>
+//                     <img
+//                       src={item?.image}
+//                       alt="picture"
+//                       width={120}
+//                       height={120}
+//                       className="object-cover"
+//                     />
+//                   </div>
 
-                  <div className="max-h-[50%]">
-                    <p className={`text-[#B7B5B7] mb-2`}>{item?.text}</p>
-                    <p className="text-[#347D8F]">{item?.date}</p>
-                  </div>
-                </div>
-              );
-            })
-          : null}
-      </section>
-    </div>
-  );
-};
+//                   <div className="max-h-[50%]">
+//                     <p className={`text-[#B7B5B7] mb-2`}>{item?.text}</p>
+//                     <p className="text-[#347D8F]">{item?.date}</p>
+//                   </div>
+//                 </div>
+//               );
+//             })
+//           : null}
+//       </section>
+//     </div>
+//   );
+// };
 
 const ContactUs = () => {
   return (

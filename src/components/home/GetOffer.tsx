@@ -1,22 +1,38 @@
+import { AiFillAndroid } from "react-icons/ai";
+import { BsApple } from "react-icons/bs";
+
 type Props = {};
 
 const GetOffer = (props: Props) => {
   return (
-    <div className="get-offer mb-[6rem] flex flex-col items-center justify-center">
-      <h2 className="text-[2rem] font-semibold text-[#fff]">
-        GET EARLY BIRD OFFER
+    <div
+      className="get-offer mb-[6rem] flex flex-col items-center justify-center"
+      id="download"
+    >
+      <h2 className="text-[2rem] font-semibold text-[#fff] text-center">
+        Download our app for Apple and ios
       </h2>
       <p className="text-center text-[#cecece] text-[1rem]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula
-        dui sit amet ligula cursus, <br /> eget molestie diam accumsan.
-        Pellentesque vel suscipit dolor.
+        You can download your app for both your ios and Android
       </p>
-      <div className="text-center mt-12">
+      <div className="flex flex-row space-x-3 text-center mt-12">
         <button
           type="button"
-          className="bg-[#35B3EB] text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-lg"
+          className="bg-[#35B3EB] flex items-center space-x-2 text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-lg"
         >
-          BUY NOW
+          <span>
+            <BsApple />
+          </span>
+          <span>Download App</span>
+        </button>
+        <button
+          type="button"
+          className="bg-[#35B3EB] flex items-center space-x-2 text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-lg"
+        >
+          <span>
+            <AiFillAndroid />
+          </span>
+          <span>Download App</span>
         </button>
       </div>
     </div>

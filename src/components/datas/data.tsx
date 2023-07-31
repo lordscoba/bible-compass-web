@@ -33,12 +33,12 @@ export const navData = [
     text: "Home",
   },
   {
-    id: "#services",
+    id: "#service",
     text: "Services",
   },
   {
-    id: "#pricing",
-    text: "Pricing",
+    id: "#download",
+    text: "Download",
   },
   {
     id: "#contact",
@@ -53,9 +53,9 @@ export const navData = [
 export const aboutUsDetails = [
   {
     textOne:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra efficitur diam",
+      "We are a company looking to provide easy solutions to your bible study.",
     textTwo:
-      "Vel sagittis ipsum. Curabitur eleifend, risus id sollicitudin pretium, massa ex tristique velit",
+      "We have provided useful functionalities in the app to help you navigate your bible more efficiently.",
   },
 ];
 
@@ -99,17 +99,17 @@ export const latestPostDetails = [
 
 export const contactUsDetails = [
   {
-    text: "47, Park Town, New York, USA",
+    text: "Abuja, Nigeria",
     icon: <CiLocationOn />,
     name: "Location",
   },
   {
-    text: "mailid@domain.com",
+    text: "support@bible-compass.com",
     icon: <AiOutlineLink />,
     name: "mail",
   },
   {
-    text: "+012-345-6789",
+    text: "+2348127681903 or +2349064846163",
     icon: <LuPhoneCall />,
     name: "call",
   },

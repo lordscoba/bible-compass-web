@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className={` w-full  h-[60rem] mb-[3rem]`}>
+    <div className={` w-full  h-[60rem] mb-[3rem]`} id="home">
       <div className="hero">
         <section
           className={`w-full xl:w-[50%] lg:w-[50%] md:w-[70%] pt-[25rem] ml-auto  md:text-center text-center xl:text-start`}
