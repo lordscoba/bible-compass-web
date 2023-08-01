@@ -145,7 +145,7 @@ const ContactUs = () => {
               return (
                 <div key={index}>
                   <div
-                    className={`flex items-center xl:justify-start justify-center gap-2 text-[#B7B5B7] text-[1rem] mb-[1rem] ${
+                    className={`flex items-center whitespace-nowrap xl:justify-start justify-center gap-2 text-[#B7B5B7] text-[1rem] mb-[1rem] ${
                       item?.name === "Location"
                         ? "cursor-auto"
                         : "cursor-pointer"

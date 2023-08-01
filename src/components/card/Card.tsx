@@ -16,12 +16,17 @@ export const cardData = [
   },
   {
     header: "Favorite",
-    body: "Abeg there's something you wrote here before just put it back.",
+    body: "You can bookmark favorite keywords for easier use",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x4.png",
   },
   {
     header: "Bible",
     body: "A bible incorporated into the app for user's edification.",
+    icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
+  },
+  {
+    header: "Effective Payment System",
+    body: "Paystack payment system integrated into the website for effective payments",
     icon: "http://www.evethemes.com/demo/lp/startup/demo/images/64x64x5.png",
   },
 ];
@@ -38,14 +43,11 @@ type DataArrayTypes = {
 
 const Card = ({ dataArray }: DataArrayTypes) => {
   return (
-    <div className="w-full xl:w-[80%] block xl:flex md:flex flex-wrap my-12 gap-4 m-auto text-center mb-[5rem] px-[30px] xl:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center p-5">
       {dataArray?.length > 0
         ? dataArray?.map((item: Props, index: any) => {
             return (
-              <div
-                key={index}
-                className="mt-9 w-full xl:w-[25rem] m-auto flex flex-col items-center"
-              >
+              <div key={index} className="w-full flex flex-col items-center">
                 <div className="bg-[#ececec] rounded-[50%] p-3 xl:w-[60px] w-[50px] xl:h-[60px] h-[50px] flex items-center justify-center">
                   <img
                     src={item?.icon}
