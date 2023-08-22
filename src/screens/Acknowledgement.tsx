@@ -7,7 +7,8 @@ import { Footer } from "../components/layout";
 import { AcknowledgementPdf } from "../pdfs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
+  // "pdfjs-dist/build/pdf.worker.min.js",
+  `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
   import.meta.url
 ).toString();
 
