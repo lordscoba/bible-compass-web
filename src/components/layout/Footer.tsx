@@ -2,6 +2,7 @@ import { FaGooglePlusG } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
 import { SlSocialFacebook } from "react-icons/sl";
 import { TfiTwitter } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 import FlexBetween from "../ReusableComponents/FlexBetween";
 import {
   AboutUsInterface,
@@ -76,9 +77,11 @@ const HelpfulLink = () => {
                   <div key={index} className={` text-[#B7B5B7]`}>
                     <p className="flex items-start xl:justify-start gap-3 mb-3 ">
                       <span className="block mt-2 h-2 w-2 rounded-full bg-white"></span>
-                      <span className="text-[1rem] mb-3 cursor-pointer">
-                        {item?.text}
-                      </span>
+                      <Link to={`${item.link}`}>
+                        <span className="text-[1rem] mb-3 cursor-pointer">
+                          {item?.text}
+                        </span>
+                      </Link>
                     </p>
                   </div>
                 );
@@ -89,46 +92,6 @@ const HelpfulLink = () => {
     </div>
   );
 };
-
-// const LatestPost = () => {
-//   return (
-//     <div className={`w-full xl:max-w-[30%] mb-6 xl:mb-0`}>
-//       <h2
-//         className={`text-[#fff]  text-[1.2rem] mb-[1rem] xl:text-start text-center `}
-//       >
-//         Latest Post
-//       </h2>
-
-//       <section className={`  mt-[2rem] xl:mt-0`}>
-//         {latestPostDetails?.length > 0
-//           ? latestPostDetails?.map((item: LatestPostInterface, index: any) => {
-//               return (
-//                 <div
-//                   key={index}
-//                   className={`flex items-center xl:justify-start justify-center gap-2 xl:mb-3 mb-4 text-[1rem]`}
-//                 >
-//                   <div>
-//                     <img
-//                       src={item?.image}
-//                       alt="picture"
-//                       width={120}
-//                       height={120}
-//                       className="object-cover"
-//                     />
-//                   </div>
-
-//                   <div className="max-h-[50%]">
-//                     <p className={`text-[#B7B5B7] mb-2`}>{item?.text}</p>
-//                     <p className="text-[#347D8F]">{item?.date}</p>
-//                   </div>
-//                 </div>
-//               );
-//             })
-//           : null}
-//       </section>
-//     </div>
-//   );
-// };
 
 const ContactUs = () => {
   return (
