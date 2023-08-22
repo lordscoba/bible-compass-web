@@ -63,24 +63,24 @@ export const aboutUsDetails = [
 
 export const helpfulLinksDetails = [
   {
-    text: "Help Desk",
-    link: "/#help",
-  },
-  {
-    text: "Our Features",
-    link: "/#ourFeatures",
-  },
-  {
-    text: "Support",
-    link: "/#support",
-  },
-  {
     text: "Contact Us",
-    link: "/#contactUs",
+    link: "/#contact",
   },
   {
-    text: "About Us",
-    link: "/#aboutUs",
+    text: "Download",
+    link: "/#download",
+  },
+  {
+    text: "Acknowledgement",
+    link: "/acknowledgement",
+  },
+  {
+    text: "Terms of servies",
+    link: "/terms",
+  },
+  {
+    text: "Privacy Policy",
+    link: "/privacy",
   },
 ];
 
