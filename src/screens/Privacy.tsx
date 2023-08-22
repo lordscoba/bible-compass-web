@@ -3,15 +3,8 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
-// import { PrivacyPolicy } from "../pdfs";
 
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   "pdfjs-dist/build/pdf.worker.min.js",
-//   import.meta.url
-// ).toString();
 pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.js";
-
-// type PDFFile = string | File | null;
 
 const Privacy = () => {
   const [numPages, setNumPages] = useState<number | undefined>();
@@ -22,9 +15,8 @@ const Privacy = () => {
     setNumPages(numPages);
   }
   return (
-    <div className="">
-      {/* <Nav /> */}
-      <div className="flex flex-col justify-center p-3 md:p-7">
+    <div className="overflow-x-hidden">
+      <div className="flex flex-col justify-center p-3 md:p-7 overflow-x-scroll">
         <div className="mx-auto">
           <Document file={PrivacyPolicy} onLoadSuccess={onDocumentLoadSuccess}>
             <Page pageNumber={pageNumber} />
