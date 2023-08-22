@@ -5,10 +5,11 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
 // import { PrivacyPolicy } from "../pdfs";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.min.js",
+//   import.meta.url
+// ).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.js";
 
 // type PDFFile = string | File | null;
 
