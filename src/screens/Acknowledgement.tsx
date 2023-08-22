@@ -33,10 +33,10 @@ const Acknowledgement = () => {
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
-            {Array.from(new Array(numPages), (el, index) => (
+            {/* {Array.from(new Array(numPages), (el, index) => (
               <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-            ))}
-            {/* <Page pageNumber={pageNumber} /> */}
+            ))} */}
+            <Page pageNumber={pageNumber} />
           </Document>
           <div className="">
             Page {pageNumber} of {numPages}
