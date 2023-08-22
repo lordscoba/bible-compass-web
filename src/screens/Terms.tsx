@@ -3,7 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
-import { TermsOfServices } from "../pdfs";
+// import { TermsOfServices } from "../pdfs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -17,6 +17,8 @@ const Terms = () => {
   function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
     setNumPages(numPages);
   }
+
+  let TermsOfServices = "./pdfs/Terms-of-Service.pdf";
   return (
     <div className="">
       {/* <Nav /> */}
