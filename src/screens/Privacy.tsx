@@ -3,7 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
-import { PrivacyPolicy } from "../pdfs";
+// import { PrivacyPolicy } from "../pdfs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -15,6 +15,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const Privacy = () => {
   const [numPages, setNumPages] = useState<number | undefined>();
   let [pageNumber, setPageNumber] = useState<number>(1);
+  let PrivacyPolicy = "./pdfs/Privacy-Policy.pdf";
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
     setNumPages(numPages);

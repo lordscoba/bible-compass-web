@@ -4,11 +4,11 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
-import { AcknowledgementPdf } from "../pdfs";
+// import { AcknowledgementPdf } from "../pdfs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  // "pdfjs-dist/build/pdf.worker.min.js",
-  `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
+  "pdfjs-dist/build/pdf.worker.min.js",
+  // `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
   import.meta.url
 ).toString();
 
@@ -20,6 +20,7 @@ const options = {
 const Acknowledgement = () => {
   const [numPages, setNumPages] = useState<number | undefined>();
   let [pageNumber, setPageNumber] = useState<number>(1);
+  let Acknowledgement = "./pdfs/Acknowledgement.pdf";
 
   function onDocumentLoadSuccess({ numPages }: PDFDocumentProxy): void {
     setNumPages(numPages);
@@ -30,7 +31,7 @@ const Acknowledgement = () => {
       <div className="flex flex-col justify-center p-3 md:p-7">
         <div className="mx-auto">
           <Document
-            file={AcknowledgementPdf}
+            file={Acknowledgement}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
