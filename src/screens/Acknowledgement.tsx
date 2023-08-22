@@ -7,7 +7,8 @@ import { Footer } from "../components/layout";
 import { AcknowledgementPdf } from "../pdfs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
+  // "pdfjs-dist/build/pdf.worker.min.js",
+  `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
   import.meta.url
 ).toString();
 
@@ -33,10 +34,10 @@ const Acknowledgement = () => {
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
-            {Array.from(new Array(numPages), (el, index) => (
+            {/* {Array.from(new Array(numPages), (el, index) => (
               <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-            ))}
-            {/* <Page pageNumber={pageNumber} /> */}
+            ))} */}
+            <Page pageNumber={pageNumber} />
           </Document>
           <div className="">
             Page {pageNumber} of {numPages}
