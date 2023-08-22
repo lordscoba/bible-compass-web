@@ -4,13 +4,8 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
-// import { AcknowledgementPdf } from "../pdfs";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  // "pdfjs-dist/build/pdf.worker.min.js",
-  `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
-  import.meta.url
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.js";
 
 const options = {
   cMapUrl: "/cmaps/",
@@ -26,18 +21,14 @@ const Acknowledgement = () => {
     setNumPages(numPages);
   }
   return (
-    <div className="">
-      {/* <Nav /> */}
-      <div className="flex flex-col justify-center p-3 md:p-7">
+    <div className="overflow-x-hidden">
+      <div className="flex flex-col justify-center p-3 md:p-7 overflow-x-scroll ">
         <div className="mx-auto">
           <Document
             file={Acknowledgement}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
-            {/* {Array.from(new Array(numPages), (el, index) => (
-              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-            ))} */}
             <Page pageNumber={pageNumber} />
           </Document>
           <div className="">
