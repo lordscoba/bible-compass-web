@@ -1,3 +1,4 @@
+import type { PDFDocumentProxy } from "pdfjs-dist";
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -10,11 +11,16 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString();
 
+const options = {
+  cMapUrl: "/cmaps/",
+  standardFontDataUrl: "/standard_fonts/",
+};
+
 const Acknowledgement = () => {
   const [numPages, setNumPages] = useState<number | undefined>();
   let [pageNumber, setPageNumber] = useState<number>(1);
 
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
+  function onDocumentLoadSuccess({ numPages }: PDFDocumentProxy): void {
     setNumPages(numPages);
   }
   return (
@@ -25,8 +31,12 @@ const Acknowledgement = () => {
           <Document
             file={AcknowledgementPdf}
             onLoadSuccess={onDocumentLoadSuccess}
+            options={options}
           >
-            <Page pageNumber={pageNumber} />
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+            ))}
+            {/* <Page pageNumber={pageNumber} /> */}
           </Document>
           <div className="">
             Page {pageNumber} of {numPages}
