@@ -5,8 +5,13 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Footer } from "../components/layout";
 // import { TermsOfServices } from "../pdfs";
 
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.min.js",
+//   import.meta.url
+// ).toString();
+
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
+  `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`,
   import.meta.url
 ).toString();
 
