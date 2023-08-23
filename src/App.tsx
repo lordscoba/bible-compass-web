@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { ConfirmPage, Donate, ErrorPage, Home } from "./screens";
 import Acknowledgement from "./screens/Acknowledgement";
+import Deletion from "./screens/Deletion";
 import Privacy from "./screens/Privacy";
 import Terms from "./screens/Terms";
 
@@ -35,6 +36,11 @@ const App = createBrowserRouter([
   {
     path: "/acknowledgement",
     element: <Acknowledgement />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/account-deletion",
+    element: <Deletion />,
     errorElement: <ErrorPage />,
   },
 ]);
