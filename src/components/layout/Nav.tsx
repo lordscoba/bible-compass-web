@@ -6,13 +6,15 @@ import { navData } from "../datas/data";
 const Nav = () => {
   const [showNav, setShowNav] = useState<Boolean>(false);
   return (
-    <section className="w-full xl:max-w-[70%] m-auto bg-white py-3">
-      <div className={`block xl:flex justify-between items-center `}>
+    <section className="w-full m-auto bg-white py-3">
+      <div
+        className={`block md:flex justify-between lg:justify-around items-center  p-5`}
+      >
         <div className={`flex items-center pr-2`}>
           <img src={CompassLogo} alt="logo" width={60} height={80} />
           <h2 className="font-bold text-[1.5rem]">Bible Compass</h2>
           <div
-            className={`block xl:hidden p-2 ml-auto  border border-[#686ac4] rounded-md cursor-pointer`}
+            className={`block md:hidden p-2 ml-auto  border border-[#686ac4] rounded-md cursor-pointer`}
             onClick={() => setShowNav((prev) => !prev)}
           >
             <RxHamburgerMenu className={`text-[1.5rem] `} />
@@ -20,7 +22,7 @@ const Nav = () => {
         </div>
 
         <div
-          className={`${showNav ? "block pl-3" : "hidden"}  mt-2 xl:flex gap-6`}
+          className={`${showNav ? "block pl-3" : "hidden"}  mt-2 md:flex gap-6`}
         >
           {navData?.length > 0
             ? navData?.map((item: NavInterface, index: any) => {
