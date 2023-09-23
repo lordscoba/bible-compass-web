@@ -82,6 +82,10 @@ export const helpfulLinksDetails = [
     text: "Privacy Policy",
     link: "/privacy",
   },
+  {
+    text: "Delete Account",
+    link: "/account-deletion",
+  },
 ];
 
 export const latestPostDetails = [
