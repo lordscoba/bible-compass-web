@@ -54,8 +54,9 @@ const PrivacyBody = () => {
           I. Entity Responsible for the Processing of your Personal Information
         </div>
         <div className="">
-          Snappy-fix technologies is responsible for the processing of your
-          personal information in connection with the use of our Services.{" "}
+          Snappy-fix technologies (www.snappy-fix.com) is responsible for the
+          processing of your personal information in connection with the use of
+          our Services.
         </div>
 
         <div className="text-2xl font-[600] text-[#34B3EB]">
@@ -68,12 +69,13 @@ const PrivacyBody = () => {
           to an identified or identifiable natural person (“Personal
           Information”). An identifiable natural person is a person who can be
           identified, directly or indirectly. Personal Information includes data
-          such as your name and email address, but is not limited to this
-          informatin. Personal Information may also include information about
-          your usage of our Services, financial or transactional details, user
-          identifiers or other application specific information When you contact
-          our customer support services, this may include a record of that
-          correspondence and associated contact information.
+          such as your name, username and email address and password, but is not
+          limited to this information. Personal Information may also include
+          information about your usage of our Services, financial or
+          transactional details, user identifiers or other application specific
+          information When you contact our customer support services, this may
+          include a record of that correspondence and associated contact
+          information.
         </div>
         <div className="text-2xl font-[600]">
           Personal Information That You Provide
@@ -90,12 +92,12 @@ const PrivacyBody = () => {
 
         <div className="">
           We use Personal Information that you provide in connection with your
-          registration and/or use of the Services (e.g., your name, user name,
-          password) in order to provide our Services and your user account to
-          you. We may also use any Personal Information that you include in any
-          inquiry that you send to us. We use the aforementioned Personal
-          Information to perform our contract with you to provide the Services
-          to you.
+          registration and/or use of the Services (e.g., your name,email,
+          username, password) in order to provide our Services and your user
+          account to you. We may also use any Personal Information that you
+          include in any inquiry that you send to us. We use the aforementioned
+          Personal Information to perform our contract with you to provide the
+          Services to you.
         </div>
         <div className="">
           For these services, this includes all or select information stored in
@@ -345,16 +347,17 @@ const PrivacyBody = () => {
           VII. Our Policy Toward Children
         </div>
         <div className="">
-          The Services are not directed to children under 13. We do not
-          knowingly collect Personal Information from children under 13. If we
+          The Services are not directed to children under 3. We do not knowingly
+          collect Personal Information from children under 3.
+          {/* If we
           become aware that a child under 18 has provided us with Personal
-          Information, we will delete such information from our files.
+          Information, we will delete such information from our files. */}
         </div>
-        <div className="">
+        {/* <div className="">
           Where the General Data Protection Regulation applies, our Services are
           not intended for children and we do not knowingly process Personal
           Information relating to children under the age of 13.
-        </div>
+        </div> */}
         <div className="text-2xl font-[600] text-[#34B3EB]">VIII. Phishing</div>
         <div className="">
           Identity theft and the practice currently known as “phishing” are of
