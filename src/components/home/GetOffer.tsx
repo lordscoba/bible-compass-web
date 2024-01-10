@@ -16,24 +16,30 @@ const GetOffer = (props: Props) => {
         You can download your app for both your ios and Android
       </p>
       <div className="flex flex-row space-x-3 text-center mt-12">
-        <button
+        <a
+          href="https://play.google.com/store/apps/details?id=com.snappyfix.bible_compass_app"
           type="button"
           className="bg-[#35B3EB] flex items-center space-x-2 text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-lg"
+          target="_blank"
+          rel="noreferrer"
         >
           <span>
             <BsApple />
           </span>
           <span>Download App</span>
-        </button>
-        <button
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.snappyfix.bible_compass_app"
           type="button"
           className="bg-[#35B3EB] flex items-center space-x-2 text-[#fff] px-6 py-2 font-bold rounded-md hover:bg-[#fff] hover:text-[#35B3EB] shadow-lg"
+          target="_blank"
+          rel="noreferrer"
         >
           <span>
             <AiFillAndroid />
           </span>
           <span>Download App</span>
-        </button>
+        </a>
       </div>
     </div>
   );
