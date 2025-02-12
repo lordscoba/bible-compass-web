@@ -7,7 +7,7 @@ const GetInTouch = (props: Props) => {
   return (
     <div className="bg-[#ececec] py-[30px] px-[8px]" id="contact">
       <h2 className=" text-center my-[1.7rem] text-[2rem] font-semibold">
-        GET IN TOUCH WITH STARTUP TEAM
+        GET IN TOUCH WITH <b>BIBLE COMPASS</b> TEAM
       </h2>
       <p className="text-center leading-7 text-[#837f7f] text-[1.1rem] mb-[1.6rem] w-full xl:w-[60%] md:w-[60%] m-auto">
         You are free to contact us to make any enquiries on the app. You can

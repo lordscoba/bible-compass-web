@@ -28,7 +28,16 @@ const Footer = () => {
         </div>
         <hr className={`my-[2rem] block h-[.2px] bg-[grey] border-none`} />
         <p className={`text-center text-[#c5c5c4]`}>
-          &copy; {date} All Rights Reserved
+          &copy; {date} powered by{" "}
+          <span className={`text-[#35B3EB]`}>
+            <a
+              href="https://www.snappy-fix.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Snappy-fix Technologies
+            </a>
+          </span>
         </p>
       </div>
     </div>
