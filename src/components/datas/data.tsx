@@ -103,7 +103,7 @@ export const latestPostDetails = [
 
 export const contactUsDetails = [
   {
-    text: "Abuja, Nigeria",
+    text: "Uyo, Nigeria",
     icon: <CiLocationOn />,
     name: "Location",
   },
@@ -113,7 +113,7 @@ export const contactUsDetails = [
     name: "mail",
   },
   {
-    text: "+2348127681903 or +2349064846163",
+    text: "+2348087690994",
     icon: <LuPhoneCall />,
     name: "call",
   },
