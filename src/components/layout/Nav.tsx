@@ -28,7 +28,7 @@ const Nav = () => {
             ? navData?.map((item: NavInterface, index: any) => {
                 return (
                   <ul key={index} id={item?.id}>
-                    <a href={item?.id} onClick={() => setShowNav(false)}>
+                    <a href={`/${item?.id}`} onClick={() => setShowNav(false)}>
                       <li className="mb-3 xl:mb-0 text-[1rem] font-semibold hover:text-[#3c9cdc] cursor-pointer uppercase">
                         {item?.text}
                       </li>

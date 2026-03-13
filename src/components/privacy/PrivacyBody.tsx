@@ -47,6 +47,7 @@ const PrivacyBody = () => {
             <li>(VIII) - Phishing</li>
             <li>(IX) - Change of Privacy Policy</li>
             <li>(X) - Complaints</li>
+            <li>(XI) - Child Safety</li>
           </ol>
         </div>
 
@@ -378,6 +379,23 @@ const PrivacyBody = () => {
         <div className="">
           If you have any complaints concerning Snappy-fix technologies
           processing of your Personal Information, please contact us.
+        </div>
+        <div className="text-2xl font-[600] text-[#34B3EB]">
+          XI. Child Safety
+        </div>
+        <div className="">
+          Bible Compass is designed to provide access to Bible scriptures, study
+          tools, and Christian resources for users of all ages. We are committed
+          to maintaining a safe environment for children and families. Our app
+          does not knowingly collect personal information from children. Bible
+          Compass does not include features related to gambling, dating,
+          financial services, or any form of real-money transactions. The
+          content provided in the app is intended for educational and spiritual
+          purposes only. We take reasonable measures to ensure that the app
+          remains safe and appropriate for users, including children. If you
+          believe that a child has provided personal information through our app
+          without parental consent, please contact us so we can take appropriate
+          steps to remove such information.
         </div>
       </div>
     </section>
